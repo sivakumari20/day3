@@ -268,5 +268,34 @@ System.out.println();
 }
 	}
 }
+***encryptedanddecrypted***
+package First_one;
 
+public class encriptedanddecripted {
+
+	public static void main(String[] args) {
+		String str= "hehoeu kjnjkbf";
+		int key=4;
+		
+		// TODO Auto-generated method stub
+		StringBuilder encrypted =new StringBuilder();
+		char[] str1= str.toCharArray();
+		for (char c:str1)
+		{
+			c+=key;
+			encrypted.append(c);
+		
+		}
+		System.out.println(encrypted);
+		
+		StringBuilder decrypted =new StringBuilder();
+		for (char c: encrypted.toString().toCharArray())
+		{
+			c-=key;
+			decrypted.append(c);
+		}
+		System.out.println(decrypted);
+	}
+
+}
 
