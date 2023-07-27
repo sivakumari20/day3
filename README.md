@@ -203,5 +203,70 @@ public class insertionsort {
 		}
 
 	}
+ ***sum of digits***
+}
+package First_one;
+
+public class sumofdigits {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x=65;
+		int sum=0;
+		while(x>0)
+		{
+			int y=x%10;
+			sum=sum+y;
+			x=x/10;
+		}
+        System.out.println(sum);
+	}
 
 }
+***transpose of a matrix***
+package First_one;
+
+import java.util.Scanner;
+
+public class matrixtranspose {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc =new Scanner(System.in);
+		System.out.println("enter a number");
+		int x=sc.nextInt();//no of rows of 1
+		System.out.println("enter a number");
+		int y=sc.nextInt();//no of colomns of 1
+		
+		int[][] matrix1=new int [x][y];
+		int[][] matrix2=new int [x][y];
+		System.out.println("enetr elements of first matrix");
+		int i=0;int j=0;
+		for (i=0;i<x;i++)
+			{
+				for ( j=0;j<y;j++)
+				{
+					 matrix1[i][j]=sc.nextInt();
+				}
+			}
+		for (i=0;i<x;i++)
+		{
+			for ( j=0;j<y;j++)
+			{
+				 matrix2[i][j]=matrix1[j][i];
+			}
+		}
+	for (i=0;i<x;i++)
+	{
+		for ( j=0;j<y;j++)
+		{
+System.out.print(matrix2[i][j]);
+
+}
+System.out.println();
+
+}
+	}
+}
+
+
