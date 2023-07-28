@@ -298,4 +298,32 @@ public class encriptedanddecripted {
 	}
 
 }
+***reverseingasentencewithoutreversingwords***
+package First_one;
+import java.lang.*;
 
+public class reversingsentencewithoutreversingwords {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="hey siva how are you ,it is going to be okay";
+		String reversedsentence=reversesentence(str);
+		System.out.println(reversedsentence);
+		
+}
+
+	public static String reversesentence(String str)
+	
+	{
+		String[] words =str.split(" ");
+		StringBuilder reversedsentence=new StringBuilder();
+		for(int i=words.length-1;i>=0;i--)
+		{
+			reversedsentence.append(words[i]);
+			if(i>0) {
+				reversedsentence.append(" ");
+			}
+		}
+		return reversedsentence.toString();
+	}
+}
